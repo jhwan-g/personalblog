@@ -30,16 +30,11 @@ html {
   font-weight: 700;
   line-height: normal;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
-#SidebarButtonHovered{
+#SidebarButton:hover{
   color: rgba(0, 0, 0, 1.0);
-  font-family: "Inria Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-decoration: none;
 }
 
 #SidebarOpenButton{

@@ -25,18 +25,9 @@ function Footer(){
 }
 
 function SidebarButton({buttonname}){
-    let [SidebarButtonID, setSidebarButtonID] = useState("SidebarButton")
-
-    function handleMouseOut() {
-        setSidebarButtonID("SidebarButton");
-    }
-    function handleMouseOver(){
-        setSidebarButtonID("SidebarButtonHovered");
-    }
-
     return(
         <div style={{paddingBottom:5}}>
-            <Link to={`/${buttonname}`} id = {SidebarButtonID} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>{buttonname}</Link>
+            <Link to={`/${buttonname}`} id = "SidebarButton">{buttonname}</Link>
         </div>
     )
 }
@@ -56,7 +47,7 @@ function TitleSidebar(){
             </button>
             <Title />
         </div>
-        <div id="Sidebar" style={{display:(isClosed?'none':'inline')}}>
+        <div id="Sidebar" style={{height:isClosed?0:69, transition:'all 0.3s ease-out'}}>
             <SidebarButton buttonname={"Profile"}></SidebarButton>
             <SidebarButton buttonname={"Contacts"}></SidebarButton>
             <SidebarButton buttonname={"Blog"}></SidebarButton>
