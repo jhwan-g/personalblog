@@ -194,7 +194,7 @@ function BlogDetailPage(){
 //routing
 export default function App(){
     return(
-        <div style={{ maxWidth:700}} className="center-content">
+        <div className="center-content container">
             <TitleSidebar />
             <Routes>
                 <Route path="/" element={<ProfilePage />} />
