@@ -1,3 +1,7 @@
+html {
+  --sidebar-hight: 0
+}
+
 #Title{
   color: #000;
   font-family: "Inria Sans";
@@ -5,42 +9,20 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  height: 90px;
+  height: 50px;
   align-self: stretch;
   margin-top: 41;
   margin-left: 52;
 }
 
 #Sidebar{
-  display: flex;
-  width: 114.004px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 30px;
+  overflow: hidden;
   left: 15px;
-  float: left;
+  gap: 30px;
 }
 
-#Frame19{
-  display: flex;
-  align-items: flex-start;
-  flex: 1 0 0;
-  align-self: stretch;
-  margin-top: 10;
-  margin-left: 52;
-}
 
-#SidebarButton0{
-  color: #000;
-  font-family: "Inria Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-decoration: none;
-}
-
-#SidebarButton1{
+#SidebarButton{
   color: rgba(0, 0, 0, 0.50);
   font-family: "Inria Sans";
   font-size: 16px;
@@ -50,10 +32,21 @@
   text-decoration: none;
 }
 
-.Frame9{
-  margin-top: 20;
-  margin-left: 15;
-  margin-right: 66;
+#SidebarButtonHovered{
+  color: rgba(0, 0, 0, 1.0);
+  font-family: "Inria Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+#SidebarOpenButton{
+  float: left;
+  margin-right: 10;
+  border: 0;
+  background-color: transparent;
 }
 
 .BasicTextFrame{
@@ -72,14 +65,14 @@
 }
 
 .Title{
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
   margin-bottom: 10;
   text-align: justify;
 }
 
 .Content{
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
   margin-bottom: 30;
   text-align: justify;
@@ -92,4 +85,9 @@
 .pdf {
   width: 100%;
   aspect-ratio: 4 / 3;
+}
+
+.center-content{
+  margin-left: auto;
+  margin-right: auto;
 }
