@@ -74,7 +74,7 @@ function ProfilePage(){ //프로필 화면
                     <div className="Title">Education</div>
                     <div className="Content">
                         <ul style={{marginTop:0}}>
-                            <li>Feb. 2024-Current, B.S. Student, Computer Science and Engineering, Seoul National University</li>
+                            <li>Mar. 2024-Current, Bachelor, Computer Science and Engineering, Seoul National University</li>
                             <li>Mar. 2021-Feb. 2024, Incheon Academy of Science and Arts</li>
                         </ul>
                     </div>
