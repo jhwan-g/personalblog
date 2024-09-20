@@ -43,7 +43,7 @@ function TitleSidebar(){
     return(<>
         <div>
             <button onClick={ChangeSidebarState} id='SidebarOpenButton'>
-                <img src="/sidebaropen.jpeg" style={{marginLeft:-10, maxHeight:35, maxWidth:35, transform:isClosed?'rotate(0deg)':'rotate(90deg)'}} alt="sidebaropenbutton"/>
+                <img src="/sidebaropen.jpeg" style={{marginLeft:-10, maxHeight:35, maxWidth:35, transform:isClosed?'rotate(0deg)':'rotate(90deg)', transition:'0.3s'}} alt="sidebaropenbutton"/>
             </button>
             <Title />
         </div>
